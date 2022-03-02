@@ -1,0 +1,10 @@
+version: '2.4'
+services: 
+  web-base:
+    image: "web-base"
+    container_name: "web-base"
+    # restart: "always"
+    ports:
+      - "19000:19000"
+    working_dir: /app
+    

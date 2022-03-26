@@ -14,6 +14,7 @@ import { routeList } from "./routes/RouteList";
 import { RequireAuth } from "./components/auth";
 import { useAppSelector } from "./app/hooks";
 import { selectAuth } from "./features/authSlice";
+import { useTranslation } from "react-i18next";
 
 export default function App() {
   let auth = useAppSelector(selectAuth)

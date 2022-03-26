@@ -2,6 +2,7 @@ import { Button, Space, Typography } from 'antd'
 import React from 'react'
 import { useNavigate } from 'react-router'
 import { useAppSelector } from '../app/hooks'
+import { ChooseLanguage } from '../components/lang/ChooseLanguage'
 import { selectAuth } from '../features/authSlice'
 import { routeList } from './RouteList'
 export const Welcome = () => {
@@ -10,6 +11,7 @@ export const Welcome = () => {
 
   return (
     <div>
+      <ChooseLanguage />
       <Typography.Title level={1}>
         Chào mừng đến trang Tra cứu cước Siptrunk.
         {!auth.jwt && (
